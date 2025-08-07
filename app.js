@@ -7,7 +7,7 @@ const cors = require("cors");
 app.use(bodyParser.json()); // Parse JSON
 app.use(bodyParser.urlencoded({ extended: true })); 
 app.use(cors({
-  origin: "http://localhost:8080", // Allow only frontend on port 8000
+  origin: "http://localhost:8080"||"https://dynamic-spark-studio.vercel.app/", // Allow only frontend on port 8000
   credentials: true               // Optional: if you're using cookies or authentication
 }));
    dotenv.config()
